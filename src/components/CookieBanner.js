@@ -16,7 +16,7 @@ class CookieBanner extends React.Component {
     this.state = {
       preferencesCookies: true,
       statisticsCookies: true,
-      marketingCookies: false,
+      marketingCookies: true,
     };
 
     this.onScroll = this.onScroll.bind(this);
@@ -173,6 +173,9 @@ class CookieBanner extends React.Component {
       showPreferencesOption,
       showStatisticsOption,
       showMarketingOption,
+      marketingDefault,
+      statisticsDefault,
+      preferencesDefault,
     } = this.props;
 
     if (this.cookies.get(CONSENT_GIVEN)) {
@@ -196,6 +199,9 @@ class CookieBanner extends React.Component {
       showPreferencesOption,
       showStatisticsOption,
       showMarketingOption,
+      marketingDefault,
+      statisticsDefault,
+      preferencesDefault,
       onTogglePreferencesCookies: this.onTogglePreferencesCookies,
       onToggleStatisticsCookies: this.onToggleStatisticsCookies,
       onToggleMarketingCookies: this.onToggleMarketingCookies,
@@ -224,6 +230,9 @@ CookieBanner.protoTypes = {
   showPreferencesOption: PropTypes.bool,
   showStatisticsOption: PropTypes.bool,
   showMarketingOption: PropTypes.bool,
+  marketingDefault: PropTypes.bool,
+  statisticsDefault: PropTypes.bool,
+  preferencesDefault: PropTypes.bool,
   onAccept: PropTypes.func,
   onAcceptPreferences: PropTypes.func,
   onAcceptStatistics: PropTypes.func,

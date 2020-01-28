@@ -24,6 +24,9 @@ export default (props = {}) => {
     onToggleMarketingCookies = Function,
     onDecline = Function,
     onConfirm = Function,
+    marketingDefault = true,
+    statisticsDefault = true,
+    preferencesDefault = true
   } = props;
 
   const {
@@ -62,7 +65,7 @@ export default (props = {}) => {
                 text={preferencesOptionText}
                 styles={cookieOptionStyle}
                 onChange={onTogglePreferencesCookies}
-                checked
+                checked={preferencesDefault}
               />
             )
           }
@@ -74,7 +77,7 @@ export default (props = {}) => {
                 text={statisticsOptionText}
                 styles={cookieOptionStyle}
                 onChange={onToggleStatisticsCookies}
-                checked
+                checked={statisticsDefault}
               />
             )
           }
@@ -86,6 +89,7 @@ export default (props = {}) => {
                 text={marketingOptionText}
                 styles={cookieOptionStyle}
                 onChange={onToggleMarketingCookies}
+                checked={marketingDefault}
               />
             )
           }
