@@ -1,25 +1,25 @@
-# React Cookie Law
+# React Cookie Law (Customizable defaults)
 
-[![npm version](https://badge.fury.io/js/ramoncardena%2Freact-cookie-law.svg)](https://badge.fury.io/js/ramoncardena%2Freact-cookie-law) [![Build Status](https://travis-ci.org/ramoncardena/react-cookie-law.svg?branch=master)](https://travis-ci.org/ramoncardena/react-cookie-law) [![Coverage Status](https://coveralls.io/repos/github/ramoncardena/react-cookie-law/badge.svg?branch=master)](https://coveralls.io/github/ramoncardena/react-cookie-law?branch=master)
+[![npm version](https://badge.fury.io/js/ramoncardena%2Freact-cookie-law.svg)](https://badge.fury.io/js/ramoncardena%2Freact-cookie-law) [![Build Status](https://travis-ci.org/ramoncardena/react-cookie-law.svg?branch=master)](https://travis-ci.org/ramoncardena/react-cookie-law)
 
-This is a fork of React Cookie Banner component GDPR compliance with default check option added.
+This is a fork of [React Cookie Banner](https://github.com/Palmabit-IT/react-cookie-law) component GDPR compliance. **It has an additional feature to configure default check for all cookies**.
 
 ## Install
 
 ```
-yarn add ramoncardena/react-cookie-law
+yarn add react-cookie-law-customizable
 ```
 
 or
 
 ```
-npm install --save ramoncardena/react-cookie-law
+npm install --save react-cookie-law-customizable
 ```
 
 ## Usage
 
 ```js
-import { CookieBanner } from "ramoncardena/react-cookie-law";
+import { CookieBanner } from "react-cookie-law-customizable";
 
 React.renderComponent(
   <div>
@@ -103,7 +103,8 @@ npm test
 
 # Author
 
-[Ramon Cardena](https://ramoncardena.com)
+Original: [Palmabit](https://www.palmabit.com/)
+Update: [Ramon Cardena](https://ramoncardena.com)
 
 # Licence
 
