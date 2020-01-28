@@ -128,7 +128,7 @@ describe('CookieBanner component', () => {
     expect(document.cookie.indexOf('rcl_consent_given=true')).toBeGreaterThanOrEqual(0);
     expect(document.cookie.indexOf('rcl_preferences_consent=true')).toBeGreaterThanOrEqual(0);
     expect(document.cookie.indexOf('rcl_statistics_consent=true')).toBeGreaterThanOrEqual(0);
-    expect(document.cookie.indexOf('rcl_marketing_consent=true')).toBeLessThan(0);
+    expect(document.cookie.indexOf('rcl_marketing_consent=true')).toBeGreaterThanOrEqual(0);
   });
 
   test('should remove consent for preferences cookie at confirm', () => {
@@ -186,6 +186,7 @@ describe('CookieBanner component', () => {
       <CookieBanner message="Custom text" />,
     );
 
+    component.find(CookieBannerContent).prop('onToggleMarketingCookies')();
     component.find(CookieBannerContent).prop('onToggleMarketingCookies')();
     component.find(CookieBannerContent).prop('onConfirm')();
 

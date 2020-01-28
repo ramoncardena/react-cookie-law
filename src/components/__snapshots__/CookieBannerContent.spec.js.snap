@@ -178,6 +178,7 @@ ShallowWrapper {
             text="Statistics"
           />
           <CookieOption
+            checked={true}
             id="check-marketing-cookies"
             onChange={[Function]}
             styles={
@@ -434,6 +435,7 @@ ShallowWrapper {
               text="Statistics"
             />
             <CookieOption
+              checked={true}
               id="check-marketing-cookies"
               onChange={[Function]}
               styles={
@@ -684,6 +686,7 @@ ShallowWrapper {
                 text="Statistics"
               />,
               <CookieOption
+                checked={true}
                 id="check-marketing-cookies"
                 onChange={[Function]}
                 styles={
@@ -878,6 +881,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
+                "checked": true,
                 "id": "check-marketing-cookies",
                 "onChange": [Function],
                 "styles": Object {
@@ -1197,6 +1201,7 @@ ShallowWrapper {
               text="Statistics"
             />
             <CookieOption
+              checked={true}
               id="check-marketing-cookies"
               onChange={[Function]}
               styles={
@@ -1453,6 +1458,7 @@ ShallowWrapper {
                 text="Statistics"
               />
               <CookieOption
+                checked={true}
                 id="check-marketing-cookies"
                 onChange={[Function]}
                 styles={
@@ -1703,6 +1709,7 @@ ShallowWrapper {
                   text="Statistics"
                 />,
                 <CookieOption
+                  checked={true}
                   id="check-marketing-cookies"
                   onChange={[Function]}
                   styles={
@@ -1897,6 +1904,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
+                  "checked": true,
                   "id": "check-marketing-cookies",
                   "onChange": [Function],
                   "styles": Object {

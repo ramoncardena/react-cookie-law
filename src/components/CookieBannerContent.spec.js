@@ -43,7 +43,7 @@ describe('CookieBannerContent component', () => {
     expect(component.contains(<CookieOption id="check-required-cookies" text="Necessary" disabled checked styles={cookieOptionStyle} />)).toBeTruthy();
     expect(component.contains(<CookieOption id="check-preferences-cookies" text="Preferences" onChange={Function} checked styles={cookieOptionStyle} />)).toBeTruthy();
     expect(component.contains(<CookieOption id="check-statistics-cookies" text="Statistics" onChange={Function} checked styles={cookieOptionStyle} />)).toBeTruthy();
-    expect(component.contains(<CookieOption id="check-marketing-cookies" text="Marketing" onChange={Function} styles={cookieOptionStyle} />)).toBeTruthy();
+    expect(component.contains(<CookieOption id="check-marketing-cookies" text="Marketing" onChange={Function} checked styles={cookieOptionStyle} />)).toBeTruthy();
   });
 
   test('should click confirm button', () => {
